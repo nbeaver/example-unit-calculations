@@ -2,8 +2,13 @@
 
 import math
 
-def percent_error(expected, measured):
-    return 100.0 * abs(measured - expected)/(expected)
+def isclose(a, b, rel_tol=1e-9, abs_tol=0.0):
+    # Until ptyhon3.5 is more widely available.
+    # https://www.python.org/dev/peps/pep-0485/#proposed-implementation
+    return abs(a-b) <= max( rel_tol * max(abs(a), abs(b)), abs_tol )
+
+def assert_isclose(a, b):
+    assert isclose(a, b), '{} != {}'.format(a, b)
 
 def deflection():
 
@@ -20,15 +25,15 @@ def deflection():
 
     deflection_1 = km_to_cm * deflection_1(length, radius_earth)
 
-    expected_deflection_1 = 7.8480491 # cm
+    expected_deflection_1 = 7.84804915384 # cm
 
-    assert percent_error(expected_deflection_1, deflection_1) < 1.0
+    assert_isclose(deflection_1, expected_deflection_1)
 
     deflection_2 = km_to_cm * deflection_2(length, radius_earth)
 
     expected_deflection_2 = 7.8480493 # cm
 
-    assert percent_error(expected_deflection_2, deflection_2) < 1.0
+    assert_isclose(deflection_2, expected_deflection_2)
 
 deflection()
 
@@ -45,15 +50,15 @@ def classical_gas():
         return h / math.sqrt(2 * pi * mass_particle * k_B * temp)
 
     thermal_wavelength_H2 = thermal_wavelength(mass_H2, temp_standard)
-    expected_thermal_wavelength_H2 = 7.4714277e-11 # m
-    assert percent_error(expected_thermal_wavelength_H2, thermal_wavelength_H2) < 1.0
+    expected_thermal_wavelength_H2 = 7.47142774858e-11 # m
+    assert_isclose(thermal_wavelength_H2, expected_thermal_wavelength_H2)
 
     def interparticle_spacing(mass_particle, density):
         return (mass_particle/density)**(1.0/3.0)
 
     interparticle_spacing_H2 = interparticle_spacing(mass_H2, density_H2)
     expected_interparticle_spacing_H2 = interparticle_spacing(mass_H2, density_H2)
-    assert percent_error(interparticle_spacing_H2, expected_interparticle_spacing_H2) < 1.0
+    assert_isclose(interparticle_spacing_H2, expected_interparticle_spacing_H2)
 
     def is_classical_gas(mass_particle, density, temp):
         return interparticle_spacing(mass_particle, density) > thermal_wavelength(mass_particle, temp)
