@@ -16,7 +16,7 @@ def deflection():
     radius_earth = 6371.01 # km
     length = 1.0 # km
 
-    km_to_cm = 1e-2/1e3
+    km_to_cm = 1e3/1e-2
 
     deflection_1 = km_to_cm * deflection_1(length, radius_earth)
 
@@ -51,8 +51,8 @@ def classical_gas():
     def interparticle_spacing(mass_particle, density):
         return (mass_particle/density)**(1.0/3.0)
 
-    interparticle_spacing_H2 = interparticle_spacing_H2(mass_H2, density_H2)
-    expected_interparticle_spacing_H2 = interparticle_spacing_H2(mass_H2, density_H2)
+    interparticle_spacing_H2 = interparticle_spacing(mass_H2, density_H2)
+    expected_interparticle_spacing_H2 = interparticle_spacing(mass_H2, density_H2)
     assert percent_error(interparticle_spacing_H2, expected_interparticle_spacing_H2) < 1.0
 
     def is_classical_gas(mass_particle, density, temp):
