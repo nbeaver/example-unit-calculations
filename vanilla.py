@@ -87,7 +87,7 @@ def geosynchronous_orbit():
 
     orbital_altitude = (G * mass_earth / (revolution/siderealday)**2)**(1.0/3.0) - radius_earth
 
-    orbital_altitude_expected = 1.37205093882e8 # m
+    orbital_altitude_expected = 3.57899416262e7 # m
 
     assert_isclose(orbital_altitude, orbital_altitude_expected)
 
