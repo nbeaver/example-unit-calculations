@@ -25,15 +25,15 @@ def deflection():
 
     deflection_1 = km_to_cm * deflection_1(length, radius_earth)
 
-    expected_deflection_1 = 7.84804915384 # cm
+    deflection_1_expected = 7.84804915384 # cm
 
-    assert_isclose(deflection_1, expected_deflection_1)
+    assert_isclose(deflection_1, deflection_1_expected)
 
     deflection_2 = km_to_cm * deflection_2(length, radius_earth)
 
-    expected_deflection_2 = 7.8480493 # cm
+    deflection_2_expected = 7.8480493 # cm
 
-    assert_isclose(deflection_2, expected_deflection_2)
+    assert_isclose(deflection_2, deflection_2_expected)
 
 def classical_gas():
     density_H2 = 0.09 # kg/m^3
@@ -48,15 +48,15 @@ def classical_gas():
         return h / math.sqrt(2 * pi * mass_particle * k_B * temp)
 
     thermal_wavelength_H2 = thermal_wavelength(mass_H2, temp_standard)
-    expected_thermal_wavelength_H2 = 7.47142774858e-11 # m
-    assert_isclose(thermal_wavelength_H2, expected_thermal_wavelength_H2)
+    thermal_wavelength_H2_expected = 7.47142774858e-11 # m
+    assert_isclose(thermal_wavelength_H2, thermal_wavelength_H2_expected)
 
     def interparticle_spacing(mass_particle, density):
         return (mass_particle/density)**(1.0/3.0)
 
     interparticle_spacing_H2 = interparticle_spacing(mass_H2, density_H2)
-    expected_interparticle_spacing_H2 = interparticle_spacing(mass_H2, density_H2)
-    assert_isclose(interparticle_spacing_H2, expected_interparticle_spacing_H2)
+    interparticle_spacing_H2_expected = interparticle_spacing(mass_H2, density_H2)
+    assert_isclose(interparticle_spacing_H2, interparticle_spacing_H2_expected)
 
     def is_classical_gas(mass_particle, density, temp):
         return interparticle_spacing(mass_particle, density) > thermal_wavelength(mass_particle, temp)
@@ -87,9 +87,9 @@ def geosynchronous_orbit():
 
     orbital_altitude = (G * mass_earth / (revolution/siderealday)**2)**(1.0/3.0) - radius_earth
 
-    expected_orbital_altitude = 1.37205093882e8 # m
+    orbital_altitude_expected = 1.37205093882e8 # m
 
-    assert_isclose(orbital_altitude, expected_orbital_altitude)
+    assert_isclose(orbital_altitude, orbital_altitude_expected)
 
 deflection()
 classical_gas()
