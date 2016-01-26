@@ -78,6 +78,19 @@ def planck_units():
     planck_charge = math.sqrt(4*pi*epsilon0*hbar*c)
     planck_temperature = planck_mass * c**2 / k_B
 
+def geosynchronous_orbit():
+    G = 6.67384e-11 # m^3 / kg s^2
+    mass_earth = 5.9742412e+24 # kg
+    siderealday = 86164.09054 # s
+    radius_earth = 6378136.49 # m
+
+    orbital_altitude = (G * mass_earth / (1/siderealday)**2)**(1.0/3.0) - radius_earth
+
+    expected_orbital_altitude = 1.37205093882e8 # m
+
+    assert_isclose(orbital_altitude, expected_orbital_altitude)
+
 deflection()
 classical_gas()
 planck_units()
+geosynchronous_orbit()
