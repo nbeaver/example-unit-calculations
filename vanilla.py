@@ -35,8 +35,6 @@ def deflection():
 
     assert_isclose(deflection_2, expected_deflection_2)
 
-deflection()
-
 def classical_gas():
     density_H2 = 0.09 # kg/m^3
     amu = 1.6605389e-27 # kg
@@ -65,4 +63,5 @@ def classical_gas():
 
     assert is_classical_gas(mass_H2, density_H2, temp_standard) == True
 
+deflection()
 classical_gas()
