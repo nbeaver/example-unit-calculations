@@ -1,8 +1,0 @@
-From: h / sqrt(2 pi * 2 amu k 273K)
-To:   angstrom
-	* 0.74714277
-	/ 1.3384323
-From: (2 amu / (0.09 g/L))^(1/3)
-To:   angstrom
-	* 33.292432
-	/ 0.030036857
