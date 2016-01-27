@@ -1,10 +1,10 @@
 PYTHON=$(wildcard *.py)
-LOG = $(patsubst %.py, %.log, $(PYTHON))
+OUT = $(patsubst %.py, %.out, $(PYTHON))
 
-all: $(LOG)
+all: $(OUT)
 
-%.log: %.py Makefile
-	python $< > $@ 
+%.out: %.py Makefile
+	python $<
 
 clean:
-	rm -f $(LOG)
+	rm -f $(OUT)
