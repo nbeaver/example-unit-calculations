@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+import os
 import math
 
 hbar = 1.0545717e-34 # kg m^2 / s
@@ -15,7 +16,7 @@ planck_time = planck_length / c
 planck_charge = math.sqrt(4*pi*epsilon0*hbar*c)
 planck_temperature = planck_mass * c**2 / k_B
 
-with open("planck_units.out", 'w') as f:
+with open(os.path.splitext(__file__)[0]+'.out', 'w') as f:
     f.write(str(planck_length) + ' m\n')
     f.write(str(planck_mass) + ' kg\n')
     f.write(str(planck_time) + ' s\n')

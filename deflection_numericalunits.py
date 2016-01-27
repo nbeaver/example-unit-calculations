@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+import os
 import math
 import numericalunits as nu
 nu.reset_units()
@@ -17,6 +18,6 @@ deflection_1 = deflection_1(length, radius_earth) / nu.cm
 
 deflection_2 = deflection_2(length, radius_earth) / nu.cm
 
-with open("deflection_numericalunits.out", 'w') as f:
+with open(os.path.splitext(__file__)[0]+'.out', 'w') as f:
     f.write(str(deflection_1) + ' cm\n')
     f.write(str(deflection_2) + ' cm\n')
