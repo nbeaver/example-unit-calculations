@@ -1,14 +1,7 @@
 #! /usr/bin/env python
 
 import math
-
-def isclose(a, b, rel_tol=1e-9, abs_tol=0.0):
-    # Until ptyhon3.5 is more widely available.
-    # https://www.python.org/dev/peps/pep-0485/#proposed-implementation
-    return abs(a-b) <= max( rel_tol * max(abs(a), abs(b)), abs_tol )
-
-def assert_isclose(a, b):
-    assert isclose(a, b), '{} != {}'.format(a, b)
+import shared
 
 def deflection():
 
@@ -27,12 +20,12 @@ def deflection():
 
     deflection_1_expected = 7.84804915384 # cm
 
-    assert_isclose(deflection_1, deflection_1_expected)
+    shared.assert_isclose(deflection_1, deflection_1_expected)
 
     deflection_2 = km_to_cm * deflection_2(length, radius_earth)
 
     deflection_2_expected = 7.8480493 # cm
 
-    assert_isclose(deflection_2, deflection_2_expected)
+    shared.assert_isclose(deflection_2, deflection_2_expected)
 
 deflection()
