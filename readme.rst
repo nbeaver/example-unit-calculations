@@ -1,8 +1,8 @@
 
 Install prerequisites::
 
-    pip install numericalunits Pint units quantities Unum natu simtk.unit
+    pip install astropy buckingham cfunits magnitude misu natu numericalunits physicalquantities Pint quantities scimath simtk.unit sympy udunitspy units Unum
 
 or::
 
-    pip install --user numericalunits Pint units quantities Unum natu simtk.unit
+    pip install --user astropy buckingham cfunits magnitude misu natu numericalunits physicalquantities Pint quantities scimath simtk.unit sympy udunitspy units Unum
