@@ -1,52 +1,81 @@
 Do unit calculations with each of these packages:
 
-[ ] astropy 1.1.1.
-    - https://pypi.python.org/pypi/astropy/
-    http://astropy.readthedocs.org/en/latest/units/
-[ ] buckingham 0.1
-    - https://pypi.python.org/pypi/buckingham/
-    - https://github.com/mdipierro/buckingham
-[ ] cfunits 1.0.1
-    - https://pypi.python.org/pypi/cfunits/1.0.1
-    - https://github.com/SciTools/cf_units
-[ ] magnitude 0.9.4
-    - https://pypi.python.org/pypi/magnitude
-    - http://juanreyero.com/open/magnitude/
-    - https://github.com/juanre/magnitude
-[ ] misu 1.0.2
-    - https://pypi.python.org/pypi/misu
-    - https://github.com/cjrh/misu
-[ ] natu 0.1.1
-    - https://pypi.python.org/pypi/natu
-    - https://kdavies4.github.io/natu/
-[ ] numericalunits 1.13
-    - https://pypi.python.org/pypi/numericalunits
-[ ] physicalquantities 0.6.1
+- astropy 1.1.1.
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/astropy/
+    - [x] find documentation
+        - http://astropy.readthedocs.org/en/latest/units/
+-   buckingham 0.1
+    - [ ] `pip install`
+        - https://pypi.python.org/pypi/buckingham/
+        - [x] Report ``pip install`` bug.
+            - https://github.com/mdipierro/buckingham/issues/3
+    - [x] find documentation
+        - https://github.com/mdipierro/buckingham
+- cfunits 1.0.1
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/cfunits/1.0.1
+    - [x] find documentation
+        - https://pythonhosted.org/cfunits/cfunits.Units.html
+        - https://github.com/SciTools/cf_units
+- magnitude 0.9.4
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/magnitude
+    - [x] find documentation
+        - http://juanreyero.com/open/magnitude/
+        - https://github.com/juanre/magnitude
+    - [x] [deflection_magnitude.py](deflection/deflection_magnitude.py)
+- misu 1.0.2
+    - [ ] `pip install`
+        - https://pypi.python.org/pypi/misu
+        - [x] Report ``pip install`` bug.
+            - https://github.com/cjrh/misu/issues/7
+    - [x] find documentation
+        - https://github.com/cjrh/misu
+- natu 0.1.1
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/natu
+    - [x] find documentation
+        - https://kdavies4.github.io/natu/
+    - [x] [deflection_natu_1.py](deflection/deflection_natu_1.py)
+    - [x] [deflection_natu_2.py](deflection/deflection_natu_2.py)
+- numericalunits 1.13
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/numericalunits
+    - [x] find documentation
+        - https://pypi.python.org/pypi/numericalunits
+- physicalquantities -1.6.1
     - https://pypi.python.org/pypi/physicalquantities/
     - https://github.com/juhasch/PhysicalQuantities
-[ ] Pint 0.6
-    - https://pypi.python.org/pypi/Pint
-    - https://pint.readthedocs.org/en/0.6/
-[ ] quantities 0.11.1
-    - https://pypi.python.org/pypi/quantities
-    - https://python-quantities.readthedocs.org/en/latest/
-[ ] scimath 4.1.2
+- Pint 0.6
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/Pint
+    - [x] find documentation
+        - https://pint.readthedocs.org/en/0.6/
+- quantities 0.11.1
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/quantities
+    - [x] find documentation
+        - https://python-quantities.readthedocs.org/en/latest/
+- scimath 4.1.2
     - https://pypi.python.org/pypi/scimath/
     - https://scimath.readthedocs.org/en/latest/units/intro.html
-[ ] simtk.unit 0.2
+- simtk.unit 0.2
     - https://pypi.python.org/pypi/simtk.unit
     - https://github.com/rmcgibbo/simtk.unit
-[ ] sympy 0.7.6.1
+- sympy 0.7.6.1
     - https://pypi.python.org/pypi/sympy/
     - http://docs.sympy.org/dev/modules/physics/units.html
-[ ] udunitspy 0.0.6
+- udunitspy 0.0.6
     - https://pypi.python.org/pypi/udunitspy/
     - https://github.com/blazetopher/udunitspy
-[ ] units 0.06
-    - https://pypi.python.org/pypi/units
+- units 0.06
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/units
     - https://bitbucket.org/adonohue/units/
-[ ] Unum 4.1.3
-    - https://pypi.python.org/pypi/Unum
+- Unum 4.1.3
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/Unum
     - https://bitbucket.org/kiv/unum/
     - http://home.scarlet.be/be052320/docs.html
     - https://pypi.python.org/pypi/Unum/4.1.0
