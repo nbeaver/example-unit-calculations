@@ -44,9 +44,15 @@ Do unit calculations with each of these packages:
         - https://pypi.python.org/pypi/numericalunits
     - [x] find documentation
         - https://pypi.python.org/pypi/numericalunits
-- physicalquantities -1.6.1
-    - https://pypi.python.org/pypi/physicalquantities/
-    - https://github.com/juhasch/PhysicalQuantities
+- PhysicalQuantities -1.6.1
+    - [ ] `pip install`
+        - https://pypi.python.org/pypi/physicalquantities/
+        - [x] Report ``pip install`` bug.
+            - https://github.com/juhasch/PhysicalQuantities/issues/69
+    - [x] find documentation
+        - http://nbviewer.jupyter.org/github/juhasch/PhysicalQuantities/blob/master/examples/pq-basics.ipynb
+        - http://nbviewer.jupyter.org/github/juhasch/PhysicalQuantities/blob/master/examples/pq-example.ipynb
+        - https://github.com/juhasch/PhysicalQuantities
 - Pint 0.6
     - [x] `pip install`
         - https://pypi.python.org/pypi/Pint
