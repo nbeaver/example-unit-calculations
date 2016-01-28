@@ -12,6 +12,6 @@ pip_user:
 	pip install --user scimath
 	pip install --user simtk.unit
 	pip install --user sympy
-	#pip install --user udunitspy
+	pip install --user udunitspy
 	pip install --user units
 	pip install --user Unum

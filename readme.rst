@@ -1,4 +1,9 @@
+Install the prerequisites::
 
-Install prerequisites using the [Makefile](Makefile).
+    sudo apt-get libudunits2-0 libudunits2-dev python-numpy python-sympy
 
-.. TODO: make list of apt packages to install.
+Install PyPi package using the [Makefile](Makefile).
+
+.. TODO: make a table of things like:
+.. - dependencies
+.. - Python 3 compatbility
