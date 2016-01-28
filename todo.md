@@ -44,6 +44,7 @@ Do unit calculations with each of these packages:
         - https://pypi.python.org/pypi/numericalunits
     - [x] find documentation
         - https://pypi.python.org/pypi/numericalunits
+    - [x] [deflection_numericalunits.py](deflection/deflection_numericalunits.py)
 - PhysicalQuantities -1.6.1
     - [ ] `pip install`
         - https://pypi.python.org/pypi/physicalquantities/
@@ -58,32 +59,46 @@ Do unit calculations with each of these packages:
         - https://pypi.python.org/pypi/Pint
     - [x] find documentation
         - https://pint.readthedocs.org/en/0.6/
+    - [x] [deflection_Pint.py](deflection/deflection_Pint.py)
 - quantities 0.11.1
     - [x] `pip install`
         - https://pypi.python.org/pypi/quantities
     - [x] find documentation
         - https://python-quantities.readthedocs.org/en/latest/
+    - [x] [deflection_quantities.py](deflection/deflection_quantities.py)
 - scimath 4.1.2
-    - https://pypi.python.org/pypi/scimath/
-    - https://scimath.readthedocs.org/en/latest/units/intro.html
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/scimath/
+    - [x] find documentation
+        - https://scimath.readthedocs.org/en/latest/units/intro.html
 - simtk.unit 0.2
-    - https://pypi.python.org/pypi/simtk.unit
-    - https://github.com/rmcgibbo/simtk.unit
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/simtk.unit
+    - [x] find documentation
+        - https://github.com/rmcgibbo/simtk.unit/blob/master/simtk/unit/doctests.py
 - sympy 0.7.6.1
-    - https://pypi.python.org/pypi/sympy/
-    - http://docs.sympy.org/dev/modules/physics/units.html
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/sympy/
+    - [x] find documentation
+        - http://docs.sympy.org/dev/modules/physics/units.html
 - udunitspy 0.0.6
-    - https://pypi.python.org/pypi/udunitspy/
-    - https://github.com/blazetopher/udunitspy
+    - [x] `pip install`
+        - https://pypi.python.org/pypi/udunitspy/
+    - [x] find documentation
+        - https://github.com/blazetopher/udunitspy#usage
 - units 0.06
     - [x] `pip install`
         - https://pypi.python.org/pypi/units
-    - https://bitbucket.org/adonohue/units/
+    - [x] find documentation
+        - https://pypi.python.org/pypi/units
+        - https://bitbucket.org/adonohue/units/
+    - [x] [deflection_units.py](deflection/deflection_units.py)
 - Unum 4.1.3
     - [x] `pip install`
         - https://pypi.python.org/pypi/Unum
-    - https://bitbucket.org/kiv/unum/
-    - http://home.scarlet.be/be052320/docs.html
-    - https://pypi.python.org/pypi/Unum/4.1.0
+    - [x] find documentation
+        - http://home.scarlet.be/be052320/docs.html
+        - https://bitbucket.org/kiv/unum/
+    - [x] [deflection_unum.py](deflection/deflection_unum.py)
 
 [ ] Do a conversion from Kelvin to Celsius to Fahrenheit.
