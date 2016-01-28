@@ -1,10 +1,16 @@
 PYTHON=$(wildcard *.py)
 PYOUT = $(patsubst %.py, %.out, $(PYTHON))
 
-all: $(PYOUT) 
+all : $(PYOUT) gnu-units.out readme.html
 
-%.out: %.py Makefile
+gnu-units.out : gnu-units.sh
+	sh gnu-units.sh > gnu-units.out
+
+%.out : %.py Makefile
 	python $<
+
+readme.html : readme.rst
+	rst2html readme.rst readme.html
 
 clean:
 	rm -f $(PYOUT)
