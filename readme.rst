@@ -1,8 +1,4 @@
 
-Install prerequisites::
+Install prerequisites using the [Makefile](Makefile).
 
-    pip install astropy buckingham cfunits magnitude misu natu numericalunits physicalquantities Pint quantities scimath simtk.unit sympy udunitspy units Unum
-
-or::
-
-    pip install --user astropy buckingham cfunits magnitude misu natu numericalunits physicalquantities Pint quantities scimath simtk.unit sympy udunitspy units Unum
+.. TODO: make list of apt packages to install.
