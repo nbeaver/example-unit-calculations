@@ -8,10 +8,12 @@ using the equation
         }
 
 where
-:math:`r` is the orbital radius,
-:math:`G` is the gravitational constant,
-:math:`m` is the mass of the earth, and
-:math:`T` is the orbital period (one sidereal day)
+
+| :math:`r` is the orbital radius,
+| :math:`G` is the gravitational constant,
+| :math:`m` is the mass of the earth, and
+| :math:`T` is the orbital period (one sidereal day)
+
 and subtracting the radius of the earth
 
 .. math::
