@@ -2,7 +2,7 @@ Install the prerequisites::
 
     sudo apt-get libudunits2-0 libudunits2-dev python-numpy python-sympy
 
-Install PyPi package using the [Makefile](Makefile).
+Install PyPi package using the `<Makefile>`_.
 
 .. TODO: make a table of things like:
 .. - dependencies
