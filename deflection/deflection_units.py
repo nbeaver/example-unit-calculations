@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+from __future__ import print_function
 
 import os
 import math
@@ -42,6 +43,4 @@ length = unit('km')(1.0)
 
 deflection_2 = unit('cm')(deflection_arc(length, radius_earth))
 
-with open(os.path.splitext(__file__)[0]+'.out', 'w') as f:
-    #f.write(str(deflection_1) + '\n')
-    f.write(str(deflection_2) + '\n')
+print(deflection_2)

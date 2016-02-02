@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+from __future__ import print_function
 
 import os
 import math
@@ -18,6 +19,5 @@ deflection_1 = km_to_cm * deflection_tangent(length, radius_earth)
 
 deflection_2 = km_to_cm * deflection_arc(length, radius_earth)
 
-with open(os.path.splitext(__file__)[0]+'.out', 'w') as f:
-    f.write(str(deflection_1) + ' cm\n')
-    f.write(str(deflection_2) + ' cm\n')
+print(deflection_1)
+print(deflection_2)

@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+from __future__ import print_function
 
 import os
 import math
@@ -23,6 +24,5 @@ deflection_1 = deflection_tangent(length, radius_earth).to(ureg.centimeters)
 
 deflection_2 = deflection_arc(length, radius_earth).to(ureg.centimeters)
 
-with open(os.path.splitext(__file__)[0]+'.out', 'w') as f:
-    f.write(str(deflection_1) + '\n')
-    f.write(str(deflection_2) + '\n')
+print(deflection_1)
+print(deflection_2)

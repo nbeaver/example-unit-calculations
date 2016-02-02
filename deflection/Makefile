@@ -7,7 +7,7 @@ gnu-units.out : gnu-units.sh
 	sh gnu-units.sh > gnu-units.out
 
 %.out : %.py Makefile
-	python $<
+	python $< > $@
 
 readme.html : readme.rst
 	rst2html readme.rst readme.html
