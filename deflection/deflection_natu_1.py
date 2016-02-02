@@ -7,6 +7,8 @@ import natu.units
 
 def deflection_tangent(tangent_length, radius):
     return (tangent_length**2 + radius**2)**(1.0/2.0) - radius
+    # Cannot use math.hypot or math.sqrt:
+    # TypeError: The quantity isn't dimensionless.
 
 def deflection_arc(arc_length, radius):
     return radius * (math.cos(arc_length/radius)**-1 - 1)

@@ -7,6 +7,8 @@ from magnitude import mg
 
 def deflection_tangent(tangent_length, radius):
     return (tangent_length**2 + radius**2)**(1.0/2.0) - radius
+    # Cannot use math.hypot or math.sqrt:
+    # magnitude.MagnitudeError: Incompatible units: [1, 0, 0, 0, 0, 0, 0, 0, 0] and [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 def deflection_arc(arc_length, radius):
     return radius * (math.cos(arc_length/radius)**-1 - 1)
