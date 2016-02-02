@@ -23,5 +23,16 @@ and the second case is::
 
     You have: earthradius ( 1/cos(1km/earthradius) - 1)
     You want: cm
-            * 7.8480493
-            / 0.1274202
+    	* 7.8480493
+    	/ 0.1274202
+
+Note that the relationship is exactly quadratic for the first case,
+and approximately quadratic for the second case,
+so that the deflection is quadrupled when the distance is doubled.
+
+::
+
+    You have: sqrt((2km)^2 + earthradius^2) - earthradius
+    You want: cm
+    	* 31.392196
+    	/ 0.031855051
