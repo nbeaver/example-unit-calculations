@@ -19,5 +19,5 @@ deflection_1 = km_to_cm * deflection_tangent(length, radius_earth)
 
 deflection_2 = km_to_cm * deflection_arc(length, radius_earth)
 
-print(deflection_1)
-print(deflection_2)
+print(deflection_1, 'cm')
+print(deflection_2, 'cm')

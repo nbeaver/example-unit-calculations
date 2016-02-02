@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+from __future__ import print_function
 
 import os
 import math
@@ -20,6 +21,5 @@ temp_standard = 273 # K
 thermal_wavelength_H2 = thermal_wavelength(mass_H2, temp_standard)
 interparticle_spacing_H2 = interparticle_spacing(mass_H2, density_H2)
 
-with open(os.path.splitext(__file__)[0]+'.out', 'w') as f:
-    f.write(str(thermal_wavelength_H2) + ' m\n')
-    f.write(str(interparticle_spacing_H2) + ' m\n')
+print(thermal_wavelength_H2, 'm')
+print(interparticle_spacing_H2, 'm')

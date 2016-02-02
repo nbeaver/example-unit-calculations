@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+from __future__ import print_function
 
 import os
 import math
@@ -11,5 +12,4 @@ radius_earth = 6378136.49 # m
 
 orbital_altitude = (G * mass_earth / (revolution/siderealday)**2)**(1.0/3.0) - radius_earth
 
-with open(os.path.splitext(__file__)[0]+'.out', 'w') as f:
-    f.write(str(orbital_altitude) + ' m\n')
+print(orbital_altitude, 'm')

@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+from __future__ import print_function
 
 import os
 import math
@@ -16,9 +17,8 @@ planck_time = planck_length / c
 planck_charge = math.sqrt(4*pi*epsilon0*hbar*c)
 planck_temperature = planck_mass * c**2 / k_B
 
-with open(os.path.splitext(__file__)[0]+'.out', 'w') as f:
-    f.write(str(planck_length) + ' m\n')
-    f.write(str(planck_mass) + ' kg\n')
-    f.write(str(planck_time) + ' s\n')
-    f.write(str(planck_charge) + ' C\n')
-    f.write(str(planck_temperature) + ' K\n')
+print(planck_length, 'm')
+print(planck_mass, 'kg')
+print(planck_time, 's')
+print(planck_charge, 'C')
+print(planck_temperature, 'K')
