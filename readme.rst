@@ -1,6 +1,6 @@
 Install the prerequisites::
 
-    sudo apt-get libudunits2-0 libudunits2-dev python-numpy python-sympy
+    sudo apt-get libudunits2-0 libudunits2-dev libnetcdf-dev python-numpy python-sympy
 
 Install PyPi package using the `<Makefile>`_.
 

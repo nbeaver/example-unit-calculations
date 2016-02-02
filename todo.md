@@ -13,8 +13,11 @@ Do unit calculations with each of these packages:
     - [x] find documentation
         - https://github.com/mdipierro/buckingham
 - cfunits 1.0.1
-    - [x] `pip install`
+    - [ ] `pip install`
         - https://pypi.python.org/pypi/cfunits/1.0.1
+        - Hard to install.
+            - https://github.com/Unidata/netcdf4-python/issues/430
+            - https://github.com/Unidata/netcdf4-python/issues/438
     - [x] find documentation
         - https://pythonhosted.org/cfunits/cfunits.Units.html
         - https://github.com/SciTools/cf_units
