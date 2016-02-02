@@ -5,6 +5,7 @@ Do unit calculations with each of these packages:
         - https://pypi.python.org/pypi/astropy/
     - [x] find documentation
         - http://astropy.readthedocs.org/en/latest/units/
+    - [x] [deflection_astropy.py](deflection/deflection_astropy.py)
 -   buckingham 0.1
     - [ ] `pip install`
         - https://pypi.python.org/pypi/buckingham/
@@ -74,11 +75,13 @@ Do unit calculations with each of these packages:
         - https://pypi.python.org/pypi/scimath/
     - [x] find documentation
         - https://scimath.readthedocs.org/en/latest/units/intro.html
+    - [x] [deflection_scimath.py](deflection/deflection_scimath.py)
 - simtk.unit 0.2
     - [x] `pip install`
         - https://pypi.python.org/pypi/simtk.unit
     - [x] find documentation
         - https://github.com/rmcgibbo/simtk.unit/blob/master/simtk/unit/doctests.py
+    - [x] [deflection_simtk.py](deflection/deflection_simtk.py)
 - sympy 0.7.6.1
     - [x] `pip install`
         - https://pypi.python.org/pypi/sympy/
@@ -87,8 +90,11 @@ Do unit calculations with each of these packages:
 - udunitspy 0.0.6
     - [x] `pip install`
         - https://pypi.python.org/pypi/udunitspy/
+        - throws import error when first used.
+        - [x] https://github.com/blazetopher/udunitspy/pull/7
     - [x] find documentation
         - https://github.com/blazetopher/udunitspy#usage
+    - [x] [deflection_udunitspy.py](deflection/deflection_udunitspy.py)
 - units 0.06
     - [x] `pip install`
         - https://pypi.python.org/pypi/units
