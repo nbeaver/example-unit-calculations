@@ -5,6 +5,7 @@ Do unit calculations with each of these packages:
         - https://pypi.python.org/pypi/astropy/
     - [x] find documentation
         - http://astropy.readthedocs.org/en/latest/units/
+        - https://github.com/astropy/astropy
     - [x] [deflection_astropy.py](deflection/deflection_astropy.py)
 -   buckingham 0.1
     - [ ] `pip install`
@@ -123,3 +124,4 @@ Do unit calculations with each of these packages:
     - [x] [deflection_unum.py](deflection/deflection_unum.py)
 
 [ ] Do a conversion from Kelvin to Celsius to Fahrenheit.
+[ ] Do trig functions on angular units like degrees.
