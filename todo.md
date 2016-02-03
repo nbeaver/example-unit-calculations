@@ -15,13 +15,23 @@ Do unit calculations with each of these packages:
         - https://github.com/mdipierro/buckingham
 - cfunits 1.0.1
     - [ ] `pip install`
-        - https://pypi.python.org/pypi/cfunits/1.0.1
-        - Hard to install.
+        - https://pypi.python.org/pypi/cfunits/1.1
+        - Hard to install on Debian.
             - https://github.com/Unidata/netcdf4-python/issues/430
             - https://github.com/Unidata/netcdf4-python/issues/438
     - [x] find documentation
         - https://pythonhosted.org/cfunits/cfunits.Units.html
+- cf_units 1.0.0
+    - [ ] `pip install`
+        - https://pypi.python.org/pypi/cf_units/1.0.0
+        - Requires `netcdftime`, which isn't on PyPi.
+    - [x] find documentation
         - https://github.com/SciTools/cf_units
+        - http://scitools.org.uk/cf_units/unit.html
+- DimPy
+    - [ ] Not on pip.
+    - [x] find documentation
+        - http://www.inference.phy.cam.ac.uk/db410/dimpy/docs/docs/
 - magnitude 0.9.4
     - [x] `pip install`
         - https://pypi.python.org/pypi/magnitude
@@ -95,6 +105,8 @@ Do unit calculations with each of these packages:
     - [x] find documentation
         - https://github.com/blazetopher/udunitspy#usage
     - [x] [deflection_udunitspy.py](deflection/deflection_udunitspy.py)
+    - [x] Deprecated in favor of `cf_units`.
+        - https://github.com/blazetopher/udunitspy/pull/6
 - units 0.06
     - [x] `pip install`
         - https://pypi.python.org/pypi/units
