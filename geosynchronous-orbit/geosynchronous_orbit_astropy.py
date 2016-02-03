@@ -7,16 +7,13 @@ from astropy.units import cds
 cds.enable()
 
 def orbital_radius(M, omega):
-    G = 1 * cds.G
-    return (G * M / omega**2)**(1.0/3.0)
+    return (cds.G * M / omega**2)**(1.0/3.0)
 
-earth_mass = 1 * cds.geoMass
-revolution = 2 * math.pi
-sidereal_day = 1 * u.sday
-earth_radius = 1 *cds.Rgeo
+revolution = u.cycle.in_units(u.radian)
 
-geosynchronous_orbital_radius = orbital_radius(earth_mass, revolution/sidereal_day).decompose()
+geosynchronous_orbital_radius = orbital_radius(cds.geoMass, revolution/u.sday).decompose()
 
+earth_radius = 1 * cds.Rgeo
 orbital_altitude = geosynchronous_orbital_radius - earth_radius
 # throws astropy.units.core.UnitConversionError
 
