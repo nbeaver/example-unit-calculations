@@ -1,7 +1,6 @@
 #! /usr/bin/env python
 from __future__ import print_function
 
-import math
 from astropy import units as u
 from astropy.units import cds
 cds.enable()
