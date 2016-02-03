@@ -2,7 +2,7 @@ Install the prerequisites::
 
     sudo apt-get libudunits2-0 libudunits2-dev libhdf5-dev libnetcdf-dev python-numpy python-sympy
 
-Install PyPi packages using the `<Makefile>`_.
+Install PyPi packages with ``make pip_install_user``.
 
 Criteria that will be evaluated:
 
