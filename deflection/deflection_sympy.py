@@ -10,6 +10,8 @@ def deflection_tangent(tangent_length, radius):
     return sympy.sqrt(tangent_length**2 + radius**2) - radius
     # can't use math.hypot or math.sqrt:
     # TypeError: can't convert expression to float
+    # can't use numpy.hypot:
+    # AttributeError: 'Mul' object has no attribute 'hypot'
 
 def deflection_arc(arc_length, radius):
     return radius * (math.cos(arc_length/radius)**-1 - 1)

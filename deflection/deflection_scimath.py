@@ -10,6 +10,8 @@ def deflection_tangent(tangent_length, radius):
     return (tangent_length**2 + radius**2)**(1.0/2.0) - radius
     # cannot use math.hypot or math.sqrt:
     # scimath.units.unit.InvalidConversion: dimensional quantities ('m') cannot be converted to scalars
+    # cannot use numpy.hypot:
+    # AttributeError: 'unit' object has no attribute 'hypot'
 
 def deflection_arc(arc_length, radius):
     return radius * (math.cos(arc_length/radius)**-1 - 1)

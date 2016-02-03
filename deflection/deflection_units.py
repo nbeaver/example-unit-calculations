@@ -4,6 +4,7 @@ from __future__ import print_function
 import os
 import math
 import fractions
+import numpy
 from units import unit
 from units.predefined import define_units
 define_units()
@@ -29,6 +30,10 @@ def deflection_tangent5(tangent_length, radius):
     return (tangent_length**2 + radius**2)**half - radius
     # TypeError: can't multiply sequence by non-int of type 'Fraction'
 
+def deflection_tangent6(tangent_length, radius):
+    return numpy.hypot(tangent_length, radius) - radius
+    # AttributeError: 'Quantity' object has no attribute 'hypot'
+
 def deflection_arc(arc_length, radius):
     return radius * (math.cos(arc_length/radius)**-1 - 1)
 
@@ -40,6 +45,7 @@ length = unit('km')(1.0)
 #deflection_1 = unit('cm')(deflection_tangent3(length, radius_earth))
 #deflection_1 = unit('cm')(deflection_tangent4(length, radius_earth))
 #deflection_1 = unit('cm')(deflection_tangent5(length, radius_earth))
+#deflection_1 = unit('cm')(deflection_tangent6(length, radius_earth))
 
 deflection_2 = unit('cm')(deflection_arc(length, radius_earth))
 

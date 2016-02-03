@@ -9,6 +9,8 @@ def deflection_tangent(tangent_length, radius):
     return (tangent_length**2 + radius**2)**(1.0/2.0) - radius
     # Cannot user math.hypot or math.sqrt:
     # TypeError: nb_float should return float object
+    # Cannot use numpy.hypot:
+    # AttributeError: 'float' object has no attribute 'hypot'
 
 def deflection_arc(arc_length, radius):
     return radius * (math.cos(arc_length/radius)**-1 - 1)

@@ -4,7 +4,6 @@ from __future__ import print_function
 import os
 import math
 import unum.units
-import fractions
 
 def deflection_tangent(tangent_length, radius):
     return (tangent_length**2 + radius**2)**(1.0/2.0) - radius
@@ -12,6 +11,8 @@ def deflection_tangent(tangent_length, radius):
     # unum.ShouldBeUnitlessError: expected unitless, got 1.0 [km]
     # cannot use math.sqrt():
     # unum.ShouldBeUnitlessError: expected unitless, got 40589769.4201 [km2]
+    # cannot use numpy.hypot:
+    # AttributeError: 'Unum' object has no attribute 'hypot'
 
 def deflection_arc(arc_length, radius):
     return radius * (math.cos(arc_length/radius)**-1 - 1)
