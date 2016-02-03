@@ -3,10 +3,11 @@ from __future__ import print_function
 
 import os
 import math
+import numpy
 import astropy.units
 
 def deflection_tangent(tangent_length, radius):
-    return (tangent_length**2 + radius**2)**(1.0/2.0) - radius
+    return numpy.hypot(tangent_length, radius) - radius
     # Cannot use math.hypot or math.sqrt:
     # TypeError: Only dimensionless scalar quantities can be converted to Python scalars
 
