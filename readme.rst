@@ -7,11 +7,13 @@ Install PyPi packages with ``make pip_install_user``.
 Criteria that will be evaluated:
 
 - Subjective:
+  - Is the documentation good?
   - Is it maintained?
   - Does it have a consistent interface?
   - Does it emit intelligible error messages?
-  - Is the name search-engine friendly?
+  - Is the package name search-engine friendly?
 - Compatibility:
+  - What is the license?
   - Is it Python 3 compatible?
   - the ``math`` library
   - the ``decimal`` library
