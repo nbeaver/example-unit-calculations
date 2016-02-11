@@ -7,12 +7,15 @@ Install PyPi packages with ``make pip_install_user``.
 Criteria that will be evaluated:
 
 - Subjective:
+
   - Is the documentation good?
   - Is it maintained?
   - Does it have a consistent interface?
   - Does it emit intelligible error messages?
   - Is the package name search-engine friendly?
+
 - Compatibility:
+
   - What is the license?
   - Is it Python 3 compatible?
   - the ``math`` library
@@ -20,7 +23,9 @@ Criteria that will be evaluated:
   - the ``fractions`` library
   - array processing with ``numpy``
   - PyPy
+
 - Technical:
+
   - Is it available on PyPi?
   - What are its dependencies?
   - Does it affect numeric precision?
@@ -30,6 +35,7 @@ Criteria that will be evaluated:
 Criteria that will not be evaluated:
 
 - Performance.
+
   - Emphasis is on readability and accuracy, not speed.
 
 Related links:
