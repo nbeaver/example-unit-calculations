@@ -15,6 +15,5 @@ geosynchronous_orbital_radius = orbital_radius(cds.geoMass, revolution/u.sday).d
 
 earth_radius = 1 * cds.Rgeo
 orbital_altitude = geosynchronous_orbital_radius - earth_radius
-# throws astropy.units.core.UnitConversionError
 
 print(orbital_altitude.to(u.km))
