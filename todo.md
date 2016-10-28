@@ -123,5 +123,6 @@ Do unit calculations with each of these packages:
         - https://bitbucket.org/kiv/unum/
     - [x] [deflection_unum.py](deflection/deflection_unum.py)
 
+[ ] Use `unittest` and `assertRaises` to check capabilities of each package.
 [ ] Do a conversion from Kelvin to Celsius to Fahrenheit.
 [ ] Do trig functions on angular units like degrees.
