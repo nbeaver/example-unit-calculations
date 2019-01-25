@@ -122,6 +122,9 @@ Do unit calculations with each of these packages:
         - http://home.scarlet.be/be052320/docs.html
         - https://bitbucket.org/kiv/unum/
     - [x] [deflection_unum.py](deflection/deflection_unum.py)
+- python-measurement
+ - https://github.com/coddingtonbear/python-measurement
+
 
 [ ] Use `unittest` and `assertRaises` to check capabilities of each package.
 [ ] Do a conversion from Kelvin to Celsius to Fahrenheit.
