@@ -129,3 +129,4 @@ Do unit calculations with each of these packages:
 [ ] Use `unittest` and `assertRaises` to check capabilities of each package.
 [ ] Do a conversion from Kelvin to Celsius to Fahrenheit.
 [ ] Do trig functions on angular units like degrees.
+[ ] Switch to Python 3
