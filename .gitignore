@@ -1,3 +1,4 @@
 *.pyc
 *.out
-*.html
+readme.html
+todo.html
